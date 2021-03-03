@@ -1,0 +1,51 @@
+-- CREATE TABLE users (
+--     id SERIAL PRIMARY KEY NOT NULL,
+--     name VARCHAR(255) NOT NULL,
+--     email VARCHAR(255),
+--     password VARCHAR(255),
+-- );
+-- CREATE TABLE reservations (
+--     id SERIAL PRIMARY KEY NOT NULL,
+--     start_date DATE,
+--     end_date DATE,
+--     property_id INTEGER,
+--     guest_id INTEGER
+-- );
+-- CREATE TABLE property_reviews (
+--     id SERIAL PRIMARY KEY NOT NULL,
+--     guest_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+--     property_id INTEGER REFERENCES properties(id) ON DELETE CASCADE,
+--     reservation_id INTEGER REFERENCES reservations(id) ON DELETE CASCADE,
+--     rating SMALLINT,
+--     message TEXT
+-- );
+-- CREATE TABLE properties (
+--     id SERIAL PRIMARY KEY NOT NULL,
+--     owner_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+--     title TIMESTAMP,
+--     description TIMESTAMP,
+--     thumbnail_photo_url TIMESTAMP,
+--     cover_photo_url TEXT,
+--     cost_per_night INTEGER,
+--     parking_spaces INTEGER,
+--     number_of_bathrooms INTEGER,
+--     number_of_bedrooms INTEGER,
+--     country VARCHAR(255),
+--     street VARCHAR(255),
+--     city VARCHAR(255),
+--     province VARCHAR(255),
+--     post_code VARCHAR(255),
+--     active BOOLEAN,
+-- );
+-- CREATE TABLE property_reviews (
+--     id SERIAL PRIMARY KEY NOT NULL,
+--     guest_id INTEGER,
+--     property_id INTEGER,
+--     reservation_id INTEGER,
+--     rating SMALLINT,
+--     message TEXT
+-- );
+-- MY JANK ASS ANSWER ABOVE
+CREATE DATABASE lightbnb;
+
+\ c lightbnb
