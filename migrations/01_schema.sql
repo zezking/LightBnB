@@ -46,6 +46,3 @@
 --     message TEXT
 -- );
 -- MY JANK ASS ANSWER ABOVE
-CREATE DATABASE lightbnb;
-
-\ c lightbnb
